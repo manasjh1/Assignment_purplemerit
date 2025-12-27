@@ -10,3 +10,4 @@ httpx==0.24.1
 pytest==7.4.4
 websockets==12.0
 email-validator
+slowapi==0.1.9
