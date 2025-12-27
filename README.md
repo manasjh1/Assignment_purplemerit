@@ -2,11 +2,11 @@
 
 ### Purple Merit Assessment Submission - December 2025
 
-**Author:** [MANAS JHA]
+**Author:** MANAS JHA
 
-**Live Demo:** [https://assignment-app-latest.onrender.com/]
+**Live Demo:** https://assignment-app-latest.onrender.com/
 
-**API Docs:** [https://assignment-app-latest.onrender.com/docs#/]
+**API Docs:** https://assignment-app-latest.onrender.com/docs#/
 
 ---
 
