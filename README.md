@@ -428,7 +428,6 @@ Strict-Transport-Security: max-age=31536000
 **Developed by Sarthi (MANAS JHA)**
 - 💼 **Position**: Machine Learning Engineer Intern
 - 🎯 **Specialization**: AI-powered applications, Full-stack development
-- 🚀 **Current Project**: Sarthi - Emotional support and reflection platform
 
 For questions, feedback, or collaboration opportunities, please reach out through the provided channels.
 
