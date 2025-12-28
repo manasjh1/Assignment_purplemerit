@@ -55,16 +55,16 @@ The system implements a **Domain-Driven Design (DDD)** approach with **Event-Dri
 
 ```
                     ┌─────────────────────────────────────────────────────────┐
-                    │                     Load Balancer                      │
-                    │              (Nginx/CloudFlare/Render)                 │
+                    │                     Load Balancer                       │
+                    │              (Nginx/CloudFlare/Render)                  │
                     └─────────────────────┬───────────────────────────────────┘
                                           │
                     ┌─────────────────────┴───────────────────────────────────┐
-                    │                API Gateway Layer                       │
-                    │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐       │
-                    │  │   Auth      │ │   Projects  │ │  Real-time  │       │
-                    │  │  Service    │ │   Service   │ │   Service   │       │
-                    │  └─────────────┘ └─────────────┘ └─────────────┘       │
+                    │                API Gateway Layer                        │
+                    │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐        │
+                    │  │   Auth      │ │   Projects  │ │  Real-time  │        │
+                    │  │  Service    │ │   Service   │ │   Service   │        │
+                    │  └─────────────┘ └─────────────┘ └─────────────┘        │
                     └─────────────────────┬───────────────────────────────────┘
                                           │
               ┌───────────────────────────┼───────────────────────────────┐
@@ -75,9 +75,9 @@ The system implements a **Domain-Driven Design (DDD)** approach with **Event-Dri
     │  Job Workers    │◄────────┤                 ├──────────►│   (Pub/Sub)     │
     │                 │         │  ┌─────────────┐│           │                 │
     │ ┌─────────────┐ │         │  │Cache Layer  ││           │ ┌─────────────┐ │
-    │ │Job Processor││         │  │Session Store││           │ │Event Store  │ │
-    │ │Retry Logic  ││         │  │Task Queue   ││           │ │Message Bus  │ │
-    │ │Health Check ││         │  └─────────────┘│           │ └─────────────┘ │
+    │ │Job Processor│ │         │  │Session Store││           │ │Event Store  │ │
+    │ │Retry Logic  │ │         │  │Task Queue   ││           │ │Message Bus  │ │
+    │ │Health Check │ │         │  └─────────────┘│           │ └─────────────┘ │
     │ └─────────────┘ │         └─────────────────┘           └─────────────────┘
     └─────────────────┘                   │                           │
               │                           │                           │
